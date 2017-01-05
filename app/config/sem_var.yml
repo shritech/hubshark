@@ -1,0 +1,3 @@
+parameters:
+    shivas_versioning: { version_parameter: application_version }
+    application_version: 0.0.1

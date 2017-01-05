@@ -1,0 +1,18 @@
+# Enable rewrite engine and route requests to framework
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} ^/robots.txt
+RewriteRule ^(.*)$ /web/robots.txt [L]
+
+# resources
+RewriteCond %{REQUEST_URI} ^/images/ [OR]
+RewriteCond %{REQUEST_URI} ^/js/ [OR]
+
+RewriteCond %{REQUEST_URI} ^/fonts/ [OR]
+RewriteCond %{REQUEST_URI} ^/css/
+RewriteRule ^(.*)$ /web/$1 [L]
+
+RewriteCond %{REQUEST_URI} !^/web/
+RewriteRule ^(.*)$ /web/$1 [QSA,L]
+RewriteRule ^(.*)$ /web/app_dev.php [QSA,L]
