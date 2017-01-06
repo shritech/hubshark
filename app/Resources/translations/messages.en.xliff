@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+        <body>
+
+            <trans-unit id="blog_title">
+                <source>blog.title</source>
+                <target>HubShark&#8482;</target>
+            </trans-unit>
+            <trans-unit id="blog_tagline">
+                <source>blog.tagline</source>
+                <target>Feels like the Future is now!!!</target>
+            </trans-unit>
+
+            <trans-unit id="nav_home">
+            	<source>nav.home</source>
+            	<target>Home</target>
+            </trans-unit>
+            <trans-unit id="nav_about">
+            	<source>nav.about</source>
+            	<target>About</target>
+            </trans-unit>
+            <trans-unit id="nav_contact">
+            	<source>nav.contact</source>
+            	<target>Contact</target>
+            </trans-unit>
+
+
+            <trans-unit id="locale_english">
+                <source>locale.english</source>
+                <target>English</target>
+            </trans-unit>
+            <trans-unit id="locale_german">
+                <source>locale.german</source>
+                <target>German</target>
+            </trans-unit>
+
+            <trans-unit id="footer_copy">
+                <source>footer.copy</source>
+                <target>HubShark&#8482; CMS</target>
+            </trans-unit>
+            <trans-unit id="footer_mail_username">
+                <source>footer.mail.username</source>
+                <target>jmcoleman</target>
+            </trans-unit>
+            <trans-unit id="footer_mail_domain">
+                <source>footer.mail.domain</source>
+                <target>ok.de</target>
+            </trans-unit>
+            <trans-unit id="footer_mail_title">
+                <source>footer.mail.title</source>
+                <target>JMColeman</target>
+            </trans-unit>
+
+            <trans-unit id="legal_terms">
+                <source>legal.terms</source>
+                <target>Terms</target>
+            </trans-unit>
+            <trans-unit id="legal_disclaimer">
+                <source>legal.disclaimer</source>
+                <target>Disclaimer</target>
+            </trans-unit>
+            <trans-unit id="legal_privacy">
+                <source>legal.privacy</source>
+                <target>Privacy Policy</target>
+            </trans-unit>
+            <trans-unit id="legal_trademarks">
+                <source>legal.trademarks</source>
+                <target>Trademarks and Licenses</target>
+            </trans-unit>
+            <trans-unit id="legal_imprint">
+                <source>legal.imprint</source>
+                <target>Imprint</target>
+            </trans-unit>
+
+
+        </body>
+    </file>
+</xliff>

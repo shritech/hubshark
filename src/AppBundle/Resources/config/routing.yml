@@ -1,0 +1,15 @@
+# src/AppBundle/Resources/config/routing.yml
+switch_language_english:
+    resource: "@AppBundle/Controller/"
+    type: annotation
+    prefix: /switchenglish
+    
+switch_language_german:
+    resource: "@AppBundle/Controller/"
+    type: annotation
+    prefix: /switchgerman
+app_homepage:
+    path:  /
+    defaults: { _controller: AppBundle:Page:index }
+    requirements:
+        _method:  GET

@@ -1,13 +1,102 @@
+<!-- app/Resources/views/base.html.twig -->
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <meta http-equiv="Content-Type" content="text/html"; charset=utf-8" />
+        <title>{% block title %}{% trans %}blog.title{% endtrans %}{% endblock %}</title>
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        {% block stylesheets %}
+            <link href='http://fonts.googleapis.com/css?family=Irish+Grover' rel='stylesheet' type='text/css'>
+            <link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
+             <!-- Boostrap min CSS -->
+        	<link href="{{ asset('bundles/app/css/bootstrap.min.css') }}" type="text/css" rel="stylesheet" />
+            <link href="{{ asset('bundles/app/css/screen.css') }}" type="text/css" rel="stylesheet" />
+        {% endblock %}
+        <link rel="shortcut icon" href="{{ asset('bundles/app/images/hubshark.favicon.png') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+
+        <section id="wrapper">
+            <header id="header">
+                <div class="top">
+                    {% block navigation %}
+                        <nav>
+                            <!-- insert flags here -->
+ 
+<div id="hubshark" class="container">
+    	
+	<!-- Locale Switch -->
+	<br/>
+	<div class="row">
+  		<div class="col-xs-3 col-sm-1 col-md-1 col-xs-offset-6 col-sm-offset-10 col-md-offset-10">
+  			<a href="{{ path('switch_language_english') }}" class="thumbnail">
+				<img src="{{ asset('bundles/app/images/flags/us.png') }}" alt="{% trans %}locale.english{% endtrans %}">
+			</a>
+  		</div>
+  		<div class="col-xs-3 col-sm-1 col-md-1">
+			<a href="{{ path('switch_language_german') }}" class="thumbnail">
+				<img src="{{ asset('bundles/app/images/flags/de.png') }}" alt="{% trans %}locale.german{% endtrans %}">
+				</a>
+  			</div>
+						
+		</div>
+ 
+<!-- end insert flags -->
+                            <ul class="navigation">
+                                <li><a href="#">{% trans %}nav.home{% endtrans %}</a></li>
+                                <li><a href="#">{% trans %}nav.about{% endtrans %}</a></li>
+                                <li><a href="#">{% trans %}nav.contact{% endtrans %}</a></li>
+                            </ul>
+                        </nav>
+                    {% endblock %}
+                </div>
+
+                <hgroup>
+                    <h2>{% block blog_title %}<img src="{{ asset('bundles/app/images/hubshark.logo.120.png') }}" /><a href="#">{% trans %}blog.title{% endtrans %}</a></img>{% endblock %}</h2>
+                    <h3>{% block blog_tagline %}<a href="#">{% trans %}blog.tagline{% endtrans %}</a>{% endblock %}</h3>
+                </hgroup>
+            </header>
+
+            <section class="main-col">
+                {% block body %}{% endblock %}
+            </section>
+            <aside class="sidebar">
+                {% block sidebar %}{% endblock %}
+            </aside>
+
+            <div id="footer">
+                {% block footer %}
+               {% trans %}footer.copy{% endtrans %}&copy; {{ "now" | date("Y") }} <a href="mailto://{% trans %}footer.mail.username{% endtrans %}@{% trans  %}footer.mail.domain{% endtrans %}">{% trans %}footer.mail.title{% endtrans %}</a>
+                    <br><br>
+<a href="#">{% trans %}legal.terms{% endtrans %}</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#">{% trans %}legal.privacy{% endtrans %}</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#">{% trans %}legal.disclaimer{% endtrans %}</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#">{% trans %}legal.trademarks{% endtrans %}</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#">{% trans %}legal.imprint{% endtrans %}</a>
+
+   <div id="socialNetworks" class="text-center">
+      <a id="shareFB" target="_blank"
+         href="https://www.facebook.com/sharer/sharer.php?u={{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) }}">
+         <img class="img-thumbnail btn-xs" src="{{ asset('bundles/app/images/facebook.png') }}" alt="Share on Facebook"/>
+      </a>
+
+      <a id="shareTW" target="_blank"
+         href="http://twitter.com/home?status={{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')) }}">
+         <img src="{{ asset('bundles/app/images/twitter.png') }}" alt="Share on Twitter"/>
+      </a>
+   </div>
+                {% endblock %}
+            </div>
+        </section>
+
+        {% block javascripts %}
+	           	<!-- JQuery -->
+			<script src="{{ asset('bundles/app/js/jquery.min.js') }}" type="text/javascript"></script>
+
+			<!-- Boostrap -->
+			<script src="{{ asset('bundles/app/js/bootstrap.min.js') }}" type="text/javascript"></script>
+        {% endblock %}
     </body>
 </html>
