@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="de" datatype="plaintext" original="file.ext">
+        <body>
+        
+            <trans-unit id="disclaimer_message">            
+                <source>disclaimer.message</source>
+                <target>Dieser Bereich enthält alle</target>
+            </trans-unit>
+            <trans-unit id="disclaimer_message2">            
+                <source>disclaimer.message2</source>
+                <target>Haftungsausschluss</target>
+            </trans-unit>
+            <trans-unit id="disclaimer_message3">            
+                <source>disclaimer.message3</source>
+                <target>Info!</target>
+            </trans-unit>     
+            
+        </body>
+    </file>
+</xliff>

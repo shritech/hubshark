@@ -1,0 +1,13 @@
+{# src/AppBundle/Resources/views/Page/imprint.html.twig #}
+{% extends 'AppBundle::layout.html.twig' %}
+ 
+{% block title %}{% trans %}legal.imprint{% endtrans %}{% endblock%}
+ 
+{% block body %}
+    <header>
+        <h1>{% trans %}legal.imprint{% endtrans %}</h1>
+    </header>
+    <article>
+        <p>{{ 'imprint.message'|trans({}, 'imprint') }} <b>{{ 'imprint.message2'|trans({}, 'imprint') }}</b> {{ 'imprint.message3'|trans({}, 'imprint') }}</p>
+    </article>
+{% endblock %}

@@ -1,0 +1,13 @@
+{# src/AppBundle/Resources/views/Page/terms.html.twig #}
+{% extends 'AppBundle::layout.html.twig' %}
+ 
+{% block title %}{% trans %}legal.terms{% endtrans %}{% endblock%}
+ 
+{% block body %}
+    <header>
+        <h1>{% trans %}legal.terms{% endtrans %}</h1>
+    </header>
+    <article>
+        <p>{{ 'terms.message'|trans({}, 'terms') }} <b>{{ 'terms.message2'|trans({}, 'terms') }}</b> {{ 'terms.message3'|trans({}, 'terms') }}</p>
+    </article>
+{% endblock %}

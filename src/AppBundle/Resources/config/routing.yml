@@ -13,3 +13,45 @@ app_homepage:
     defaults: { _controller: AppBundle:Page:index }
     requirements:
         _method:  GET
+
+app_about:
+    path:  /about
+    defaults: { _controller: AppBundle:Page:about }
+    requirements:
+        _method:  GET
+ 
+app_terms:
+    path:  /terms
+    defaults: { _controller: AppBundle:Page:terms }
+    requirements:
+        _method:  GET
+ 
+app_disclaimer:
+    path:  /disclaimer
+    defaults: { _controller: AppBundle:Page:disclaimer }
+    requirements:
+        _method:  GET
+ 
+app_privacy:
+    path:  /privacy
+    defaults: { _controller: AppBundle:Page:privacy }
+    requirements:
+        _method:  GET
+ 
+app_trademarks:
+    path:  /trademarks
+    defaults: { _controller: AppBundle:Page:trademarks }
+    requirements:
+        _method:  GET
+ 
+app_imprint:
+    path:  /imprint
+    defaults: { _controller: AppBundle:Page:imprint }
+    requirements:
+        _method:  GET
+        
+app_contact:
+    path:  /contact
+    defaults: { _controller: AppBundle:Page:contact }
+    requirements:
+        _method:  GET|POST

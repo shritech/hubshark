@@ -1,0 +1,4 @@
+# src/AppBundle/Resources/config/config.yml
+parameters:
+    # Contact email address
+    app.emails.contact_email: contact@email.com

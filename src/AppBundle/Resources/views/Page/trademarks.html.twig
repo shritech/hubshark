@@ -1,0 +1,13 @@
+{# src/AppBundle/Resources/views/Page/trademarks.html.twig #}
+{% extends 'AppBundle::layout.html.twig' %}
+ 
+{% block title %}{% trans %}legal.trademarks{% endtrans %}{% endblock%}
+ 
+{% block body %}
+    <header>
+        <h1>{% trans %}legal.trademarks{% endtrans %}</h1>
+    </header>
+    <article>
+        <p>{{ 'trademarks.message'|trans({}, 'trademarks') }} <b>{{ 'trademarks.message2'|trans({}, 'trademarks') }}</b> {{ 'trademarks.message3'|trans({}, 'trademarks') }}</p>
+    </article>
+{% endblock %}

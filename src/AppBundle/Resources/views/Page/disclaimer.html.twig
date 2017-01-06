@@ -1,0 +1,13 @@
+{# src/AppBundle/Resources/views/Page/disclaimer.html.twig #}
+{% extends 'AppBundle::layout.html.twig' %}
+ 
+{% block title %}{% trans %}legal.disclaimer{% endtrans %}{% endblock%}
+ 
+{% block body %}
+    <header>
+        <h1>{% trans %}legal.disclaimer{% endtrans %}</h1>
+    </header>
+    <article>
+        <p>{{ 'disclaimer.message'|trans({}, 'disclaimer') }} <b>{{ 'disclaimer.message2'|trans({}, 'disclaimer') }}</b> {{ 'disclaimer.message3'|trans({}, 'disclaimer') }}</p>
+    </article>
+{% endblock %}

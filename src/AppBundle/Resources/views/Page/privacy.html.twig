@@ -1,0 +1,13 @@
+{# src/AppBundle/Resources/views/Page/privacy.html.twig #}
+{% extends 'AppBundle::layout.html.twig' %}
+ 
+{% block title %}{% trans %}legal.privacy{% endtrans %}{% endblock%}
+ 
+{% block body %}
+    <header>
+        <h1>{% trans %}legal.privacy{% endtrans %}</h1>
+    </header>
+    <article>
+        <p>{{ 'privacy.message'|trans({}, 'privacy') }} <b>{{ 'privacy.message2'|trans({}, 'privacy') }}</b> {{ 'privacy.message3'|trans({}, 'privacy') }}</p>
+    </article>
+{% endblock %}

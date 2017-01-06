@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+        <body>
+        
+            <trans-unit id="about_message">            
+                <source>about.message</source>
+                <target>This area will contain all the</target>
+            </trans-unit>
+            <trans-unit id="about_message2">            
+                <source>about.message2</source>
+                <target>About Us</target>
+            </trans-unit>
+            <trans-unit id="about_message3">            
+                <source>about.message3</source>
+                <target>Info!</target>
+            </trans-unit>     
+            
+        </body>
+    </file>
+</xliff>

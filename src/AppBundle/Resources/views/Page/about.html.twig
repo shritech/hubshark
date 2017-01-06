@@ -1,0 +1,13 @@
+{# src/AppBundle/Resources/views/Page/about.html.twig #}
+{% extends 'AppBundle::layout.html.twig' %}
+ 
+{% block title %}{% trans %}nav.about{% endtrans %}{% endblock%}
+ 
+{% block body %}
+    <header>
+        <h1>{% trans %}nav.about{% endtrans %}</h1>
+    </header>
+    <article>
+        <p>{{ 'about.message'|trans({}, 'about') }} <b>{{ 'about.message2'|trans({}, 'about') }}</b> {{ 'about.message3'|trans({}, 'about') }}</p>
+    </article>
+{% endblock %}
