@@ -19,7 +19,7 @@ use Symfony\Component\Form\Extension\Core\Type\EmailType;
  *
  * @author Shrinivas
  */
-class ContactType {
+class ContactType extends AbstractType {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder->add('name',TextType::class);

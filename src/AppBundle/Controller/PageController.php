@@ -54,10 +54,11 @@ class PageController extends Controller
         $enquiry = new Contact();
         $form = $this->createForm(ContactType::class, $enquiry);
  
-        $this->request = $request;
+        //$this->request = $request;
+        
         if ($request->getMethod() == 'POST') {
-            $form->bind($request);
-
+            //$form->bind($request);
+           $form->handleRequest($request); 
            if ($form->isValid()) {
                // Perform some action, such as sending an email
 

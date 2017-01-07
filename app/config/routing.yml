@@ -1,4 +1,9 @@
 app:
     resource: "@AppBundle/Resources/config/routing.yml"
     prefix:   /
-
+app_blog_show:
+    path:  /{id}
+    defaults: { _controller: AppBundle:Blog:show }
+    requirements:
+        _method:  GET
+        id: \d+
